@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-info" href="#"><i class="fas fa-user"></i> Bank Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                <li class="nav-item">
+                    <a class="nav-link active text-danger" aria-current="page" onclick="">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active text-danger" aria-current="page"
+                        onclick="">Balance Enquiry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-danger" aria-current="page" href="#"
+                        data-bs-target="#exampleModal" data-bs-toggle="modal">Debit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-danger" aria-current="page" href="#"
+                        data-bs-target="#exampleModal" data-bs-toggle="modal">Credit</a>
+                </li>
+            </ul>
+            <div class="d-flex me-5">
+                <p class="fw-bold "> <i class="fas fa-user-clock "></i> <span class="text-info">Stay </span>
+                    Connected To Your Account <span class="text-danger">24/7</span> </p>
+                <button class="btn btn-outline-info btn-sm ms-5"routerLink='' >log out</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success" id="exampleModalLabel"><i class="fas fa-exchange-alt"></i>
+                        Amount Transfer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="to_acc" name="toacc" placeholder="Account Number">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="c_acc" name="confimACC"
+                        placeholder="Confirm Account Number">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="amnt" name="amnt" placeholder="Enter Your Amount">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="">send</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success" id="exampleLabel"><i class="fas fa-exchange-alt"></i>
+                        Amount Transfer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="to_acc" name="toacc" placeholder="Account Number">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="c_acc" name="confimACC"
+                        placeholder="Confirm Account Number">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="amnt" name="amnt" placeholder="Enter Your Amount">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="">send</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</div>

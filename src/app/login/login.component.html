@@ -1,0 +1,40 @@
+<div class="container col-md-12 main">
+    <div class="parent mt-5 ">
+        <div class="row left">
+            <div class=" col-md-6 ">
+                <form action="#" class="" (ngSubmit)="login()">
+                    <div class="form-group col-md-6">
+                        <h1 class="text-center">Sign in</h1>
+                        <div class="mb-3">
+                            <input type="text" (change)="acnoChange($event)" name="acno" [(ngModel)]="acno" required="true" class="form-control" id="accno" name="acno"
+                               [value]="accno" placeholder="Enter your account number">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" (change)="pswChange($event)" name="pass" [(ngModel)]="pass" required="true" class="form-control" id="pwd" name="pass"
+                                placeholder="Enter your password">
+                        </div>
+                        <button    class="btn btn-outline-primary col-md-12 col-sm-12 col-12 mb-3"> Login</button>
+                        <p class="fs-6">Doesn't have an account? <a class="text-danger" routerLink='register'>Create an
+                                account!</a></p>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6 ">
+                <h3 class=""> Welcome Back !</h3>
+                <div class="head text-center mt-5 ">
+                    <h4 id="h4">{{aim}}</h4>   <br>
+
+                    <h4>You Can Also Access Your Account Information Using Easy Services..</h4>
+                </div>
+                <div class="img ">
+                    <img src="./assets/login2.gif" class="img-fluid" alt="" srcset="">
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
